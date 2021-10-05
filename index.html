@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Sprint 2: homepage fotografia </title>
+
+    <!-- Bootstrap arxiu CSS -->
+    <link rel="stylesheet" href= "bootstrap-css/bootstrap.min.css">
+
+    <!-- Link a l'arxiu CSS-->
+    <link rel="stylesheet" href="dist/css/main.css" >
+
+    <!--Bootstrap via CDN arxiu CSS
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    -->
+</head>
+
+
+<body>
+  <header> <!-- logo i botons-->
+    <div class="container">
+      <div class="row">
+        <!-- columna logo-->
+        <div class="col-6 col-sm-4 d-flex justify-content-center d-sm-flex justify-content-sm-start">
+          <img class="img-fluid p-1" src="img/logo-nuria.png" alt="logo núria grinyó">
+        </div>
+        <!-- columna grup botons -->
+        <div class="col-6 col-sm-8 d-flex justify-content-center  d-sm-flex justify-content-sm-end p-3">
+          <div class="btn-group" role="group" aria-label="grup de botons inici">
+            <!-- Botó Entra -->
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalLogin">Entra</button>
+            <!-- Botó Registre -->
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Registra't </button>
+          </div>
+        </div>
+          <!-- Modal Entra -->
+          <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLabelLogin" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabelLogin">Entra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+    
+                  <!-- formulari log in -->
+                  <form>
+                    <div class="mb-3">
+                      <label for="inputEmail1" class="form-label">Adreça electrònica</label>
+                      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputPassword1" class="form-label">Contrasenya</label>
+                      <input type="password" class="form-control" id="inputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="check1">
+                      <label class="form-check-label" for="check1">Recorda'm</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                  </form>
+    
+                </div> <!-- final body-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Tancar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Modal Registre -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Registra't </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- formulari registre -->
+                  <form>
+                    <!-- Nom i cognoms-->
+                    <div class="mb-3">
+                      <label for="nomRegistre" class="form-label"> Nom </label>
+                      <input type="text" class="form-control" id="nomRegistre">
+                    </div>
+                    <div class="mb-3">
+                      <label for="nomRegistre" class="form-label"> Cognoms </label>
+                      <input type="text" class="form-control" id="nomRegistre">
+                    </div>
+
+                    <!-- Adreça electrònica-->
+                    <div class="mb-3">
+                      <label for="mailRegistre" class="form-label">Adreça electrònica</label>
+                      <input type="email" class="form-control" id="mailRegistre" aria-describedby="emailHelp">
+                    </div>
+
+                    <!-- Contrasenya -->
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <!-- checkbox novetats -->
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Envia'm novetats</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                  </form>
+    
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Tancar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div> <!-- final row header-->
+      </div><!-- final container header -->
+  </header>
+  
+  <!--NAVBAR AMB BOTÓ HAMBURGUESA-->
+  <nav class="navbar navbar-light navbar-expand-md"> <!-- navbar-light (colores light); bg-light(background light)-->
+    <div class="container">
+      
+      <!-- Botó hamburguesa-->
+      <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#menu" 
+          aria-controls="menu" 
+          aria-expanded="false" 
+          aria-label="Mostrar / Ocultar Menu"
+      > 
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- menú de navegació -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto mb-2 mt-3 m-md-1">
+          <li class="nav-item"><a href="#" class="nav-link"> Pàgina principal </a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Projectes fotogràfics </a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Botiga </a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Contacte </a></li>
+        </ul>
+      </div>
+
+    </div> <!-- final container navbar-->
+  </nav>
+
+
+  <!-- slider -->
+<div class="row mt-1">
+  <div class="columna col-12">
+    <div class="carousel slide" id="mi-carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid" src="img/foto1.jpg" alt="pila de pedres en alta muntanya">
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/foto2.jpg" alt="llac de muntanya vist des de dalt">
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/foto3.jpg" alt="muntanya d'aprop">
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/foto4.jpg" alt="pedres a l'horitzó en alta muntanya">
+        </div>
+      </div>
+
+      <!-- controls-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide-to="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"> Anterior </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide-to="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"> Següent </span>
+      </button>
+
+      <!-- indicadors -->
+      <div class="carousel-indicators">
+        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="0" aria-label="Foto 1"></button>
+        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="1" aria-label="Foto 2"></button>
+        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="2" aria-label="Foto 3"></button>
+        <button type="button" class="" data-bs-target="#mi-carousel" data-bs-slide-to="3" aria-label="Foto 4"></button>
+      </div>
+    </div> <!--final slider-->
+</div>
+</div>
+  
+<!-- grid de fotografies -->
+<div class="row">
+<div class="col-12 col-md-6">
+  <figure class="figure m-3 mt-5"> <img class="img-fluid" src="img/foto-montevideo.jpg" alt="carrer de montevideo">
+  <figcaption class="figure-caption d-flex justify-content-center p-2">
+    <p>Montevideo, Uruguay. Abril de 2019</p>
+  </figcaption>
+  </figure>
+
+</div>
+
+<div class="col-12 col-md-6">
+  <figure class="figure me-3 ms-3 mt-md-5">
+  <img class="img-fluid" src="img/foto-lima.jpg" alt="posta de sol">
+  <figcaption class="figure-caption d-flex justify-content-center p-2">
+    <p>Lima, Perú. Març de 2019</p>
+  </figcaption>
+  </figure>
+</div>
+
+  <div class="col-12 col-md-6">
+    <figure class="figure me-3 ms-3">
+    <img class="img-fluid" src="img/foto-oruro.jpg" alt="orquestra a peu">
+    <figcaption class="figure-caption d-flex justify-content-center p-2">
+      <p>Carnaval d'Oruro, Bolívia. Març de 2019</p>
+    </figcaption>
+  </figure>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <figure class="figure me-3 ms-3">
+    <img class="img-fluid" src="img/foto-peru.jpg" alt="guia ensenyant paisatge a turistes">
+    <figcaption class="figure-caption d-flex justify-content-center p-2">
+      <p>Machu Picchu, Perú. Març de 2019</p>
+    </figcaption>
+    </figure>
+  </div>
+</div>
+
+  </div> <!--final container-->
+
+    <!-- Bootstrap arxiu JS -->
+    <script src="bootstrap-js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap via CDN arxiu JS
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    -->
+    
+</body>
+</html>

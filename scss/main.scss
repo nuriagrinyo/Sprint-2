@@ -1,0 +1,38 @@
+$primary-color: #EAE1DF;
+$accent-color: #B79492;
+$text-color: #736D67;
+
+header {
+    background-color: $accent-color
+}
+    
+body {
+    background-color: $primary-color;
+}
+
+.navbar {
+    background-color: $primary-color;
+}
+
+.navbar-toggler {
+    background-color: $accent-color;
+}
+
+.modal-header {
+    background-color: $accent-color;
+}
+
+.modal-content {
+    background-color: $primary-color;
+}
+
+.figure-caption {
+    color: $text-color;
+}
+
+
+
+
+
+
+

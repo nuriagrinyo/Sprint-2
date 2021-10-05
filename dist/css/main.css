@@ -1,0 +1,28 @@
+header {
+  background-color: #B79492;
+}
+
+body {
+  background-color: #EAE1DF;
+}
+
+.navbar {
+  background-color: #EAE1DF;
+}
+
+.navbar-toggler {
+  background-color: #B79492;
+}
+
+.modal-header {
+  background-color: #B79492;
+}
+
+.modal-content {
+  background-color: #EAE1DF;
+}
+
+.figure-caption {
+  color: #736D67;
+}
+/*# sourceMappingURL=main.css.map */
